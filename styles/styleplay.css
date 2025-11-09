@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Passion+One:wght@400;700;900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+}
+
+:root{
+    --primarybg: #236d05;
+    --secundarybg: #dfdfdf;
+    --primaryfont: #44af19;
+    --secundaryfont: #dfdfdf;
+    --bigfont: "Passion One", serif;
+    --smallfont: "Inter", serif;
+}
+
+body{
+
+    background-color: var(--secundarybg);
+}
+
+header{
+    background-color: var(--primarybg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap:10px;
+    margin-bottom: 20px;
+}
+
+header h1{
+    font-family: var(--bigfont);
+    color: var(--secundaryfont);
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color:var(--secundaryfont);
+}
+
+header nav ul li a:hover{
+    color:var(--primaryfont)
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    color: var(--secundaryfont)
+}
+
+header nav ul li{
+
+    border-radius: 5px;
+    padding: 5px;
+    font-family: var(--smallfont);
+}
+
+header nav ul li:hover{
+    transition: all 0.3s;
+    background-color: var(--secundarybg);
+    color: var(--primaryfont);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+
+section{
+    border-radius: 30px;
+    background-color: var(--primarybg);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--smallfont);
+    color: var(--secundaryfont);
+    gap: 10px;
+}
+
+input{
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: none;
+    border-style: none;
+}
+
+button{
+    height: 40px;
+    width: 90px;
+    border-radius: 5px;
+}
+
+@media only screen and
+(max-width:350px){
+    .header {
+        font-size: 13px;
+    }
+
+    .section{
+        padding: 15px;
+    }
+}
+

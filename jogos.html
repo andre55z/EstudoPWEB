@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styleplay.css">
+    <title>Jogos</title>
+</head>
+<body>
+    <header>
+        <h1>Jogos</h1>
+        <nav>
+            <ul>
+                <li><a href="#invert">Inverter nome</a></li>
+                <li><a href="#cont">Contar letras</a></li>
+                <li><a href="#mont">Monte seu jogador</a></li>
+                <li><a href="#ordem">Ordenar lista</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="invert" class="invert">
+            <label>Insira o nome do jogador para inverter o nome dele</label>
+            <input type="text" name="inputnome" id="inputnome" placeholder="insira o nome aqui"/>
+            <button onclick="inverter()">Inverter!</button>
+            <p id="saidaInv"></p>
+        </section>
+
+        <section id="cont" class="cont">
+            <label>Vamos contar quantas letras tem o nome do jogador</label>
+            <input id="conttxt" type="text" placeholder="Insira o nome"/>
+            <button onclick="contar()">Contar</button>
+            <p id="saidaCon"></p>
+        </section>
+
+        <section id="mont">
+            <label>Vamos montar seu jogador</label>
+            <input type="text" id="nome" placeholder="Insira o nome">
+            <input type="text" id="idade" placeholder="Inira a idade">
+            <input type="text" id="posicao" placeholder="Insira a posição do jogador">
+            <input type="text" id="timeb" placeholder="Time de base">
+            <input type="text" id="timea" placeholder="Time atual">
+            <input type="text" id="gols" placeholder="Gols na carreira">
+            <input type="text" id="assistencias" placeholder="Assistencias">
+            <button id="criar" onclick="criar()">Criar</button>
+            <p id="montaP"></p>
+        </section>
+
+        <section id="ordem">
+            <label>Vamos ordenar uma lista </label>
+            <input id="adc" type="text" placeholder="Coloque um numero" >
+            <button onclick="adc()">Adiconar na lista</button>
+            <button onclick="cresc()">Ordenar Crescente</button>
+            <button onclick="decresc()">Ordenar decrescente</button>
+            <p id="saidaLista"></p>
+        </section>
+    </main>
+    
+</body>
+<script src="./cod.js"></script>
+</html>
